@@ -1,1 +1,11 @@
-testiteksi lmao 
+
+aVasemmalla yläkulmassa näe
+t'
+
+ kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin 
+nimi on master. Klikkaamalla commitia, näet muissa ikkunoissa
+ commitiin liittyviä tietoja. Oikealla alakulmassa näet ne 
+
+
+tiedosot, jotka ovat muuttuneet commitissa (jos valinta on patch) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on tree). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana. Val
+odtestiteksi lmao 

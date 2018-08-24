@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikko9.FXMLDocumentController">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="221.0" text="Finnkinon elokuvat">
+      <font>
+        <Font name="Arial Bold Italic" size="22.0" />
+      </font>
+    </Label>
+    <ChoiceBox id="valitseTeatteri" fx:id="picktheatre" layoutX="14.0" layoutY="109.0" prefHeight="29.0" prefWidth="279.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ChoiceBox>
+    <Label layoutX="14.0" layoutY="80.0" prefHeight="29.0" prefWidth="150.0" text="Valitse teatteri:">
+      <font>
+        <Font name="Arial Bold" size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField id="esitysDay" fx:id="actday" disable="false" layoutX="307.0" layoutY="109.0" prefHeight="29.0" prefWidth="279.0" promptText="Esityspäivä" text="" visible="true" />
+    <TextField id="alkamisAika" fx:id="startingtime" layoutX="14.0" layoutY="174.0" prefHeight="29.0" prefWidth="279.0" promptText="Alkamisaika" />
+    <TextField id="endingAika" fx:id="endingtime" layoutX="307.0" layoutY="174.0" prefHeight="29.0" prefWidth="279.0" promptText="Päättymisaika" />
+    <Label font="$x1" layoutX="14.0" layoutY="154.0" prefHeight="20.0" prefWidth="159.0" text="Alkamisväli:" />
+    <Button fx:id="listfilms" layoutX="164.0" layoutY="222.0" mnemonicParsing="false" onAction="#listFilmsAction" prefWidth="129.0" text="Listaa elokuvat">
+      <font>
+        <Font name="Arial" size="14.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Label font="$x1" layoutX="33.0" layoutY="255.0" prefHeight="23.0" prefWidth="188.0" text="Tai hae elokuvan nimellä:" />
+    <TextField fx:id="givemoviename" layoutX="221.0" layoutY="252.0" prefHeight="29.0" prefWidth="250.0" promptText="Anna elokuvan nimi" />
+    <Button fx:id="namesearch" font="$x2" layoutX="486.0" layoutY="257.0" mnemonicParsing="false" onAction="#nameSearchAction" prefWidth="100.0" text="Nimihaku" />
+    <ListView fx:id="textarea1" blendMode="SRC_OVER" layoutX="0.0" layoutY="289.0" onMouseClicked="#setMovieName" prefHeight="229.0" prefWidth="600.0" />
+    <Button font="$x2" layoutX="307.0" layoutY="222.0" mnemonicParsing="false" onAction="#empty" prefWidth="138.0" text="Tyhjennä tulolista" />
+      <TextField fx:id="selectedMovie" editable="false" layoutX="14.0" layoutY="525.0" prefHeight="27.0" prefWidth="279.0" promptText="elokuva" />
+      <TextField fx:id="imdbRating" editable="false" layoutX="308.0" layoutY="525.0" prefHeight="27.0" prefWidth="76.0" />
+      <Button layoutX="423.0" layoutY="525.0" mnemonicParsing="false" onAction="#openImdbSite" prefHeight="27.0" prefWidth="159.0" text="Open movie imdb site" />
+  </children>
+</AnchorPane>
